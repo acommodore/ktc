@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer | Kafui Tot Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .volunteer-header {
+      padding: 120px 2rem 2rem;
+      text-align: center;
+      background: var(--bg-light-pink);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="/public/logo_placeholder_1782289620430.png" alt="Kafui Tot Centre Logo">
+        <span>Kafui Tot Centre</span>
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="index.html#donate" class="btn btn-primary">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="volunteer-header">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <h1 class="section-title">Join Our <span class="text-sea">Team</span></h1>
+    <p class="section-subtitle" style="margin-bottom: 0;">Fill out the application below to start making a difference.</p>
+  </header>
+
+  <section class="section bg-light" style="padding-top: 2rem;">
+    <div class="container">
+      <!-- Volunteer Application Form -->
+      <div class="volunteer-form-container fade-in-up" style="margin-top: 0;">
+        <form class="volunteer-form">
+          <h3>Volunteer Application Form</h3>
+          <p class="form-desc">All information provided will be treated confidentially.</p>
+
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group-2">
+              <div class="input-wrap">
+                <label>Full Name</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrap">
+                <label>Date of Birth</label>
+                <input type="date" required>
+              </div>
+            </div>
+            <div class="form-group-2">
+              <div class="input-wrap">
+                <label>Gender</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrap">
+                <label>Nationality</label>
+                <input type="text" required>
+              </div>
+            </div>
+            <div class="input-wrap">
+              <label>Residential Address</label>
+              <input type="text" required>
+            </div>
+            <div class="form-group-3">
+              <div class="input-wrap">
+                <label>Phone Number</label>
+                <input type="tel" required>
+              </div>
+              <div class="input-wrap">
+                <label>WhatsApp Number</label>
+                <input type="tel">
+              </div>
+              <div class="input-wrap">
+                <label>Email Address</label>
+                <input type="email" required>
+              </div>
+            </div>
+            <div class="form-group-3">
+              <div class="input-wrap">
+                <label>Emergency Contact Name</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrap">
+                <label>Relationship</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrap">
+                <label>Emergency Contact Number</label>
+                <input type="tel" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Education and Employment</legend>
+            <div class="input-wrap">
+              <label>Highest Level of Education Completed</label>
+              <div class="radio-group">
+                <label><input type="radio" name="education" value="highschool"> High School</label>
+                <label><input type="radio" name="education" value="diploma"> Diploma</label>
+                <label><input type="radio" name="education" value="bachelors"> Bachelor's Degree</label>
+                <label><input type="radio" name="education" value="masters"> Master's Degree</label>
+                <label><input type="radio" name="education" value="other"> Other</label>
+              </div>
+            </div>
+            <div class="form-group-3">
+              <div class="input-wrap">
+                <label>Field of Study</label>
+                <input type="text">
+              </div>
+              <div class="input-wrap">
+                <label>Current Occupation</label>
+                <input type="text">
+              </div>
+              <div class="input-wrap">
+                <label>Organization/Institution</label>
+                <input type="text">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Volunteer Interests</legend>
+            <div class="checkbox-grid">
+              <label><input type="checkbox"> Teaching Support</label>
+              <label><input type="checkbox"> Child Mentorship</label>
+              <label><input type="checkbox"> Reading and Literacy Programs</label>
+              <label><input type="checkbox"> Arts and Creative Activities</label>
+              <label><input type="checkbox"> Admin and Office Support</label>
+              <label><input type="checkbox"> Fundraising</label>
+              <label><input type="checkbox"> Community Outreach</label>
+              <label><input type="checkbox"> Event Support</label>
+              <label><input type="checkbox"> Communications & Social Media</label>
+              <label><input type="checkbox"> Photography/Videography</label>
+              <label><input type="checkbox"> Information Technology</label>
+              <label><input type="checkbox"> Other</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Skills and Experience</legend>
+            <div class="input-wrap">
+              <label>Please describe any skills, qualifications, or experience that may be relevant:</label>
+              <textarea rows="3"></textarea>
+            </div>
+            <div class="input-wrap">
+              <label>Have you previously worked or volunteered with children?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="worked_kids" value="yes"> Yes</label>
+                <label><input type="radio" name="worked_kids" value="no"> No</label>
+              </div>
+            </div>
+            <div class="input-wrap">
+              <label>If yes, please describe:</label>
+              <textarea rows="2"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Availability</legend>
+            <div class="input-wrap">
+              <label>How often would you like to volunteer?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="often" value="once"> One-Time Event</label>
+                <label><input type="radio" name="often" value="weekly"> Weekly</label>
+                <label><input type="radio" name="often" value="biweekly"> Bi-Weekly</label>
+                <label><input type="radio" name="often" value="monthly"> Monthly</label>
+                <label><input type="radio" name="often" value="as_needed"> As Needed</label>
+              </div>
+            </div>
+            <div class="input-wrap">
+              <label>Preferred Days:</label>
+              <div class="checkbox-grid">
+                <label><input type="checkbox"> Monday</label>
+                <label><input type="checkbox"> Tuesday</label>
+                <label><input type="checkbox"> Wednesday</label>
+                <label><input type="checkbox"> Thursday</label>
+                <label><input type="checkbox"> Friday</label>
+              </div>
+            </div>
+            <div class="form-group-2">
+              <div class="input-wrap">
+                <label>Preferred Hours</label>
+                <input type="text">
+              </div>
+              <div class="input-wrap">
+                <label>Expected Start Date</label>
+                <input type="date">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Motivation</legend>
+            <div class="input-wrap">
+              <label>Why would you like to volunteer with Kafui Tot Center?</label>
+              <textarea rows="3" required></textarea>
+            </div>
+            <div class="input-wrap">
+              <label>What do you hope to gain from this experience?</label>
+              <textarea rows="3" required></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>References</legend>
+            <h4>Reference 1</h4>
+            <div class="form-group-2">
+              <div class="input-wrap"><label>Name</label><input type="text" required></div>
+              <div class="input-wrap"><label>Relationship</label><input type="text" required></div>
+              <div class="input-wrap"><label>Phone Number</label><input type="tel" required></div>
+              <div class="input-wrap"><label>Email Address</label><input type="email"></div>
+            </div>
+            <h4 style="margin-top: 1rem;">Reference 2</h4>
+            <div class="form-group-2">
+              <div class="input-wrap"><label>Name</label><input type="text" required></div>
+              <div class="input-wrap"><label>Relationship</label><input type="text" required></div>
+              <div class="input-wrap"><label>Phone Number</label><input type="tel" required></div>
+              <div class="input-wrap"><label>Email Address</label><input type="email"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Child Safeguarding Declaration</legend>
+            <p class="form-desc">Kafui Tot Center is committed to protecting children from abuse, neglect, exploitation, and harm.</p>
+            <div class="declaration-grid">
+              <label><input type="checkbox" required> I understand that Kafui Tot Center prioritizes child safety and protection.</label>
+              <label><input type="checkbox" required> I agree to comply with all child safeguarding and protection policies.</label>
+              <label><input type="checkbox" required> I understand that any misconduct involving children will result in immediate termination of my volunteer engagement.</label>
+              <label><input type="checkbox" required> I certify that the information provided in this application is true and accurate.</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Applicant Declaration</legend>
+            <p class="form-desc" style="font-size: 0.9rem;">I declare that the information provided in this application is accurate to the best of my knowledge. I understand that Kafui Tot Center reserves the right to verify the information provided and may terminate my volunteer placement if false information is discovered.</p>
+            <div class="form-group-2" style="margin-top: 1rem;">
+              <div class="input-wrap">
+                <label>Applicant Signature (Type Name)</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrap">
+                <label>Date</label>
+                <input type="date" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <div style="margin-top: 2rem;">
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">
+            <img src="/public/logo_placeholder_1782289620430.png" alt="KTC Logo">
+            <span>Kafui Tot Centre LBG</span>
+          </a>
+          <p>Transforming lives by giving every child a strong foundation for lifelong learning.</p>
+          <p class="reg-details">Registered: 30th April 2025</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#team">Team Leaders</a></li>
+            <li><a href="index.html#donate">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><strong>Phone / WhatsApp:</strong><br> 055 549 9742<br> +233555499742</p>
+          <p><strong>Location:</strong><br> Dedenya Shaihills, Greater Accra Region, Ghana</p>
+          <div class="social-links">
+            <a href="#" class="social-icon">fb</a>
+            <a href="#" class="social-icon">ig</a>
+            <a href="#" class="social-icon">tw</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kafui Tot Centre LBG. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

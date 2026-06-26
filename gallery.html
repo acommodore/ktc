@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Kafui Tot Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .gallery-header {
+      padding: 120px 2rem 4rem;
+      text-align: center;
+      background: var(--bg-light-blue);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: var(--shadow-md);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="/public/logo_placeholder_1782289620430.png" alt="Kafui Tot Centre Logo">
+        <span>Kafui Tot Centre</span>
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="index.html#donate" class="btn btn-primary">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="gallery-header">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <h1 class="section-title">Our <span class="text-pink">Gallery</span></h1>
+    <p class="section-subtitle">Moments of joy, learning, and growth at Kafui Tot Centre.</p>
+  </header>
+
+  <section class="gallery-grid">
+    <div class="gallery-item fade-in-up delay-1">
+      <img src="/public/classroom_learning_1782289656440.png" alt="Classroom Learning">
+    </div>
+    <div class="gallery-item fade-in-up delay-2">
+      <img src="/public/gallery_1_1782290171385.png" alt="Drawing and Painting">
+    </div>
+    <div class="gallery-item fade-in-up">
+      <img src="/public/hero_kids_1782289632393.png" alt="Happy Kids">
+    </div>
+    <div class="gallery-item fade-in-up delay-1">
+      <img src="/public/gallery_2_1782290180659.png" alt="Outdoor Play">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">
+            <img src="/public/logo_placeholder_1782289620430.png" alt="KTC Logo">
+            <span>Kafui Tot Centre LBG</span>
+          </a>
+          <p>Transforming lives by giving every child a strong foundation for lifelong learning.</p>
+          <p class="reg-details">Registered: 30th April 2025</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#team">Team Leaders</a></li>
+            <li><a href="index.html#donate">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><strong>Phone / WhatsApp:</strong><br> 055 549 9742<br> +233555499742</p>
+          <p><strong>Location:</strong><br> Dedenya Shaihills, Greater Accra Region, Ghana</p>
+          <div class="social-links">
+            <a href="#" class="social-icon">fb</a>
+            <a href="#" class="social-icon">ig</a>
+            <a href="#" class="social-icon">tw</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kafui Tot Centre LBG. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
