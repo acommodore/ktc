@@ -3,14 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteer | Kafui Tot Centre</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fredoka+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <title>Client Portal - Kafui Tot Centre</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    .volunteer-header {
-      padding: 120px 2rem 2rem;
+    .portal-header {
+      background: var(--sea-blue);
+      color: white;
       text-align: center;
-      background: var(--bg-light-pink);
+      padding: 4rem 1rem;
+    }
+    .portal-container {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .portal-card {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .portal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .portal-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .portal-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--dark-text);
+    }
+    .portal-card p {
+      color: #666;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -39,17 +79,28 @@
     </div>
   </nav>
 
-  <header class="volunteer-header">
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
-    <h1 class="section-title">Join Our <span class="text-sea">Team</span></h1>
-    <p class="section-subtitle" style="margin-bottom: 0;">Fill out the application below to start making a difference.</p>
+  <header class="portal-header">
+    <h1 class="section-title">Client <span class="text-lemon">Portal</span></h1>
+    <p class="section-subtitle">Update your website content easily.</p>
   </header>
 
-  <section class="section bg-light" style="padding-top: 2rem;">
-    <div class="container">
-      <!-- Volunteer Application Form -->
-      <div class="volunteer-form-container fade-in-up" style="margin-top: 0;">
-        <iframe src="https://docs.google.com/forms/d/1PIioDwoUuWG1mf8EQ8BelKhk-lSYAbjfKkyRyLo8Ij4/viewform?embedded=true" width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 8px; background: transparent;">Loading...</iframe>
+  <section class="portal-container">
+    <h2>Welcome to your Dashboard</h2>
+    <p>Choose an action below to update the live website. Updates will appear immediately after you submit the forms.</p>
+    
+    <div class="portal-grid">
+      <div class="portal-card fade-in-up">
+        <div class="portal-icon">🗞️</div>
+        <h3>Post a News Update</h3>
+        <p>Publish a new announcement, article, or story to the News page.</p>
+        <a href="#" target="_blank" class="btn btn-primary btn-large">Add News</a>
+      </div>
+      
+      <div class="portal-card fade-in-up delay-1">
+        <div class="portal-icon">📸</div>
+        <h3>Upload to Gallery</h3>
+        <p>Add a new picture and caption to the Photo Gallery.</p>
+        <a href="#" target="_blank" class="btn btn-primary btn-large" style="background-color: var(--lemon-green); color: var(--dark-text);">Add Picture</a>
       </div>
     </div>
   </section>
@@ -78,7 +129,8 @@
         </div>
         <div class="footer-contact">
           <h3>Contact Us</h3>
-          <p><strong>Phone / WhatsApp:</strong><br> 055 549 9742<br> +233555499742</p>
+          <p><strong>Phone:</strong> <br>+233 (0) 555 499 742 <br>+233 (0) 246 848 111</p>
+          <p><strong>Email:</strong> <br>kafuitotcentre@gmail.com</p>
           <p><strong>Location:</strong><br> Dedenya Shaihills, Greater Accra Region, Ghana</p>
           <div class="social-links">
             <a href="#" class="social-icon">fb</a>
